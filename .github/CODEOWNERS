@@ -1,0 +1,12 @@
+# Lab Training 2026 — Code Owners
+#
+# 規則：所有 PR 預設由學長 review，學長被列為 owner 後
+# GitHub 會自動將其加入 PR 的 Requested reviewers 欄位。
+#
+# 文件：https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# 預設 reviewer：所有檔案
+*           @chenbenlu
+
+# 新生自我介紹 — 雙保險（同 @chenbenlu）
+/students/  @chenbenlu

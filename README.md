@@ -80,9 +80,11 @@ git push origin feature/intro-<學號>
 
 1. 回到 GitHub，進入你 fork 後的 repo 頁面，點擊 **Compare & pull request**。
 2. PR 的 **base repository** 請選擇實驗室的原始 repo，**base branch** 選 `main`。
-3. 在 PR 描述中簡述你做了什麼。
-4. 在右側 **Reviewers** 欄位 **指定一位學長 review** 你的 PR。
-5. 等待 review 通過後合併 🎉
+3. PR 模板會自動帶入勾選清單，請逐項確認後填寫描述。
+4. **學長會被 CODEOWNERS 自動指派為 reviewer，無需手動指派**。
+5. 等待 CI 綠燈（`Validate student introduction`）與學長 approve 後合併 🎉
+
+> 💡 如果 CI 紅燈，請點開 Actions log 看錯誤訊息、在 **同一個分支** 修正後重新 push，**不要關閉 PR 重開**。詳細協作規範見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
