@@ -1,0 +1,19 @@
+services:
+  ros2-lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lab-training-2026:humble
+    container_name: lab-training-2026
+    stdin_open: true
+    tty: true
+    network_mode: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ../:/workspace:rw
+    working_dir: /workspace
+    command: bash

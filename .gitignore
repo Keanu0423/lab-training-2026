@@ -1,0 +1,41 @@
+# ===== ROS 2 / colcon build artifacts =====
+build/
+install/
+log/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# ===== C++ =====
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.out
+*.app
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ===== ROS 2 specific =====
+*.bag
+*.bag.active
+log/
+COLCON_IGNORE
+AMENT_IGNORE
+
+# Claude Code 
+.claude/
+CLAUDE.md
